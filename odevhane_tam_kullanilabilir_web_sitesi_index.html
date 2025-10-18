@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ödevhane</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body { background: linear-gradient(to bottom right, #e0f7fa, #fce4ec); font-family: 'Comic Sans MS', sans-serif; }
+    header { background-color: #4db6ac; }
+    .card { transition: transform 0.3s; }
+    .card:hover { transform: scale(1.05); }
+  </style>
+</head>
+<body class="text-gray-800">
+  <header class="text-white py-4 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center px-6">
+      <h1 class="text-3xl font-bold">📘 Ödevhane</h1>
+      <nav class="space-x-4">
+        <a href="#odev" class="hover:underline">Ödev Destek</a>
+        <a href="#etkinlik" class="hover:underline">Etkinlikler</a>
+        <a href="#bilgi" class="hover:underline">Bilgi Köşesi</a>
+        <a href="#iletisim" class="hover:underline">İletişim</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container mx-auto px-6 py-10">
+    <h2 class="text-2xl font-bold text-center mb-8">3. ve 4. Sınıf Öğrencilerine Ödev Desteği!</h2>
+    <div id="odev" class="grid md:grid-cols-3 gap-6">
+      <div class="card bg-white rounded-2xl shadow-lg p-4">
+        <h3 class="text-xl font-bold mb-2 text-blue-600">Matematik</h3>
+        <p>Toplama, çıkarma, kesirler ve geometri konularını kolayca öğren!</p>
+      </div>
+      <div class="card bg-white rounded-2xl shadow-lg p-4">
+        <h3 class="text-xl font-bold mb-2 text-green-600">Türkçe</h3>
+        <p>Okuma-anlama, cümle bilgisi ve kelime çalışmaları seni bekliyor.</p>
+      </div>
+      <div class="card bg-white rounded-2xl shadow-lg p-4">
+        <h3 class="text-xl font-bold mb-2 text-pink-600">Fen Bilimleri</h3>
+        <p>Deneyler, videolar ve eğlenceli etkinliklerle bilimi keşfet!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="etkinlik" class="bg-yellow-100 py-10">
+    <div class="container mx-auto px-6">
+      <h2 class="text-2xl font-bold text-center mb-6">🎨 Etkinlikler</h2>
+      <ul class="list-disc list-inside text-lg space-y-2">
+        <li>Haftalık bulmaca yarışmaları</li>
+        <li>Bilim deneyleri</li>
+        <li>Resim ve yazı yarışmaları</li>
+        <li>Online test ve quiz etkinlikleri</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="bilgi" class="container mx-auto px-6 py-10">
+    <h2 class="text-2xl font-bold text-center mb-6">📚 Bilgi Köşesi</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white rounded-2xl shadow-lg p-4">
+        <h3 class="text-lg font-bold mb-2 text-blue-700">Günün Bilgisi</h3>
+        <p>Güneş dünyadan 109 kat daha büyüktür!</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow-lg p-4">
+        <h3 class="text-lg font-bold mb-2 text-green-700">Eğlenceli Gerçek</h3>
+        <p>Balıklar su altında uyur ama gözlerini kapatmaz!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="iletisim" class="bg-pink-100 py-10">
+    <div class="container mx-auto px-6">
+      <h2 class="text-2xl font-bold text-center mb-6">📞 İletişim</h2>
+      <form action="https://formspree.io/f/xjkvlyze" method="POST" class="bg-white rounded-2xl shadow-lg p-6 max-w-lg mx-auto">
+        <label class="block mb-2">Ad Soyad:</label>
+        <input type="text" name="ad" required class="w-full border p-2 mb-4 rounded-lg">
+        <label class="block mb-2">E-posta:</label>
+        <input type="email" name="email" required class="w-full border p-2 mb-4 rounded-lg">
+        <label class="block mb-2">Mesaj:</label>
+        <textarea name="mesaj" required class="w-full border p-2 mb-4 rounded-lg"></textarea>
+        <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">Gönder</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="text-center py-4 bg-green-300 mt-10">
+    <p>© 2025 Ödevhane | Tüm hakları saklıdır.</p>
+  </footer>
+</body>
+</html>
